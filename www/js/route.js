@@ -18,11 +18,11 @@ angular.module('aksyonvaw.routes', ['ui.router'])
 
 
 
-    // .state('menu', {
-    //   url: '/',
-    //   templateUrl: 'view/menu.html',
-    //   controller: 'MenuCtrl'
-    // })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'view/about.html',
+      controller: 'AboutCtrl'
+    })
 
 
 

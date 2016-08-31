@@ -16,6 +16,7 @@ angular.module('aksyonvaw', [
 
   // controllers
   'aksyonvaw.indexCtrl',
+  'aksyonvaw.aboutCtrl',
   
   // services
 

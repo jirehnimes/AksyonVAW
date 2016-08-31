@@ -1,1 +1,59 @@
-/* Empty. Add your own CSS if you like */
+html, body {
+	background-color: #ffcceb;
+}
+
+.android-scroll-bar ::-webkit-scrollbar {width: 5px;}
+
+.android-scroll-bar ::-webkit-scrollbar-track { border-radius: 10px;}
+
+.android-scroll-bar ::-webkit-scrollbar-thumb { border-radius: 10px; background: rgb(169,169,169); }
+
+.android-scroll-bar ::-webkit-scrollbar-thumb:window-inactive {background: rgb(128,128,128); }
+
+.scroll-bar-indicator {
+    display: none !important;
+}
+
+.no-padding-margin {
+	padding: 0;
+	margin: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.button-assertive {
+	background-color: #ff0099 !important;
+	color: white !important;
+}
+
+/**
+ * Popover CSS 
+ */
+
+ion-popover-view.fit {
+    height: auto !important;
+    padding: 20px !important;
+	position: fixed !important;
+	top: 15% !important;
+	left: 50% !important;
+	margin-top: 5px !important;
+	margin-left: -20% !important;
+	width: 40% !important;
+	background-color: rgba(255,255,255,0.9);
+}
+
+ion-popover-view.fit ion-content {
+	position: relative !important;
+	height: 100% !important;
+}
+
+ion-popover-view.fit .button-block{
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 30px;
+	line-height: 100%;
+	min-height: 100%;
+	font-size: 100%;
+}

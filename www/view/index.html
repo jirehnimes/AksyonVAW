@@ -1,5 +1,28 @@
 <ion-view id="index">
-    <ion-content overflow-scroll="true" padding="false" scroll="true">
-    	AKSYONVAW
+    <ion-content overflow-scroll="true" padding="false" scroll="false">
+        <div class="row row-no-padding responsive-sm">
+            <div class="col col-67 center">
+                <img src="img/aksyonvawlogo.png" id="logo" />
+            </div>
+            <div class="col col-33">
+            	<button ui-sref="category" class="button button-clear button-full button-assertive">
+            		START
+        		</button>
+
+                <button ui-sref="about" class="button button-clear button-full button-assertive">
+                	ABOUT
+            	</button>
+            	
+            	<a href="#" onclick="window.open('http://ph.tbtt.apc.org/mapit/', '_system');">
+            		<button class="button button-clear button-full button-assertive">
+            			CONTACT
+        			</button>
+        		</a>
+            	
+            	<button ng-click="exitApp()" class="button button-clear button-full button-assertive">
+            		QUIT
+        		</button>
+        	</div>
+        </div>
     </ion-content>
 </ion-view>
