@@ -7,23 +7,46 @@
 	width: auto;
 }
 
-#about .row .col:nth-child(1) {
+#about .row .col#tab {
 	background-color: #ff0099;
 }
 
-#about .row .col:nth-child(1) > .row:nth-child(1) {
+#about .row .col#tab > .row:nth-child(1) {
   	height: 50px;
 }
 
-#about .row .col:nth-child(1) > .row:nth-child(2) {
+#about .row .col#tab > .row:nth-child(2) {
 	display: flex;
   	justify-content: center;
   	align-items: center;
   	height: calc(100% - 50px);
 }
 
-#about .row .col:nth-child(2) {
+#about .row .col#content {
 	background-color: white;
+}
+
+#about .row .col#content > .row > .col {
+	overflow-y: auto;
+}
+
+#about .row .col#content #fmalogo,
+#about .row .col#content #eightlayerlogo {
+	height: auto;
+	width: 100%;
+}
+
+#about .row .col#content button {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#about button#btnTop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px !important;
+	height: 50px;
 }
 
 @media screen and (orientation:portrait) { 

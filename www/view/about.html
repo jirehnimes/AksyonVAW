@@ -1,7 +1,7 @@
 <ion-view id="about">
-    <ion-content overflow-scroll="true" padding="false" scroll="false">
+    <ion-content overflow-scroll="false" padding="false" scroll="false">
         <div class="row row-no-padding">
-            <div class="col col-33">
+            <div class="col col-33" id="tab">
                 <div class="row row-no-padding">
                     <button ui-sref="index" class="button button-clear button-assertive">
                         <i class="ion ion-home"></i>&nbsp;&nbsp;HOME
@@ -11,9 +11,46 @@
                     <img src="img/aksyonvawlogo.png" id="logo" />
                 </div>
             </div>
-            <div class="col col-67">
-                
+
+            <div class="col col-67" id="content">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/fmaph.PNG" id="fmalogo" />
+                        <a href="#" onclick="window.open('http://fma.ph', '_system');">
+                            <button class="button button-block button-assertive">
+                                VISIT THE SITE
+                            </button>
+                        </a>
+                        <p align="justify">
+                            The Foundation for Media Alternatives (FMA) is a nonprofit service institution whose mission has been to assist citizens and communities—especially civil society organizations (CSOs) and other development stakeholders—in their strategic and appropriate use of the various information and communications media for democratization and popular empowerment.
+                        </p>
+                        <blockquote><h3>VISION</h3></blockquote>
+                        <p align="justify">
+                            FMA affirms and updates it vision of a “vibrant and socially progressive Philippines and global (civil) society composed of and nurtured by the interaction of informed citizens and empowered communities oriented towards sustainable development.”
+                        </p>
+                        <blockquote><h3>MISSION</h3></blockquote>
+                        <p align="justify">
+                            FMA exists to “assist civil society organizations (CSOs) and other development stakeholders (including government) on their right to information and communication by advocating for openness in information societies, addressing gender concerns and ICT, working for digital rights, ensuring strategic and responsible use of ICT and optimizing ICT for sustainable development.”
+                        </p>
+                        <hr />
+                        <h4>Special thanks to:</h4>
+                        <center>
+                            Erwin Galang, Jireh June Nimes, Jhoanna Erika Singh, Roma Fatima M. Suing, Annaliza N. Ojas
+                        </center>
+                        <hr />
+                        <h4>Powered by:</h4>
+                        <img src="img/8layer.png" id="eightlayerlogo" />
+                        <a href="#" onclick="window.open('http://www.8layertech.com', '_system');">
+                            <button class="button button-block button-assertive">
+                                VISIT THE SITE
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- <button class="button button-assertive" id="btnTop" ng-click="scrollTop()">
+            <i class="ion ion-chevron-up"></i>
+        </button> -->
     </ion-content>
 </ion-view>
