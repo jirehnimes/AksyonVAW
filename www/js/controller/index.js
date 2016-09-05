@@ -4,12 +4,17 @@ angular.module('aksyonvaw.indexCtrl', [])
 	function(
 		$scope, 
 		$state,
-		$ionicPlatform
+		$ionicPlatform,
+		NativeAudio
 	) {
 
-		$scope.exitApp = function(){
-			ionic.Platform.exitApp();
-		};
+		$ionicPlatform.ready(function() {
+			NativeAudio.loop('music');
+
+			$scope.exitApp = function() {
+				ionic.Platform.exitApp();
+			};
+		});
 
 	}
 );

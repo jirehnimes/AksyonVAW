@@ -1,0 +1,32 @@
+#category {
+	background-color: #ffcceb;
+}
+
+#category #logo {
+	height: 150px;
+	width: auto;
+}
+
+#category .row .col:nth-child(1) {
+	background-color: white;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+#category .row .col:nth-child(2) {
+	background-color: #ff0099;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+}
+
+@media screen and (orientation:portrait) { 
+
+}
+
+@media screen and (orientation:landscape) { 
+	#category .row .col {
+		height: 100vh;
+	}
+}

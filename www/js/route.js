@@ -26,6 +26,22 @@ angular.module('aksyonvaw.routes', ['ui.router'])
 
 
 
+    .state('category', {
+      url: '/category',
+      templateUrl: 'view/category.html',
+      controller: 'CategoryCtrl'
+    })
+
+
+    
+    .state('identityTheft', {
+      url: '/identityTheft',
+      templateUrl: 'view/identityTheft.html',
+      controller: 'IdentityTheftCtrl'
+    })
+
+
+
     // .state('menu.home', {
     //   url: 'home',
     //   views: {
