@@ -52,6 +52,6 @@ angular.module('aksyonvaw', [
       $('html').addClass('android-scroll-bar');
 
       // Load all audio into memory
-      // NativeAudio.load();
+      NativeAudio.load();
   });
 })

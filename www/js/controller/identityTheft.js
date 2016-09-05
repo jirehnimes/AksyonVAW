@@ -97,7 +97,7 @@ angular.module('aksyonvaw.identityTheftCtrl', [])
 		}
 
 		$ionicPlatform.ready(function() {
-			// NativeAudio.play('it');
+			NativeAudio.play('it');
 
 			Popover.init($scope);
 
