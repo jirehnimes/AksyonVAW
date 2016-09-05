@@ -1,11 +1,9 @@
-<ion-popover-view class="fit" id="po">
+<ion-popover-view class="fit" id="popover">
 	<ion-content scroll="false">
-		<p id="poq1" style="display: none;">What will she do? Keep it to herself?</p>
-		<p id="poq" style="display: none;">What will she do? Do you want to report it?</p>
-		<p id="poq2" style="display: none;">What will Chesca do? Contact the website administrator and report the incident and seek help from the PNP Anti-Cybercrime Group or NBI-Cybercrime Division?</p>
+		<p id="popoverText">Default popover text</p>
 		<div class="button-bar">
-		  <button class="button button-balanced button-block" ng-click="changePage('yes'); closePopover()">YES</button>
-		  <button class="button button-assertive button-block" ng-click="changePage('no'); closePopover()">NO</button>
+		  <button class="button button-balanced button-block" ng-click="closePopover()">YES</button>
+		  <button class="button button-assertive button-block" ng-click="closePopover()">NO</button>
 		</div>
 	</ion-content>
 </ion-popover-view>

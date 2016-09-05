@@ -4,12 +4,25 @@ angular.module('aksyonvaw.identityTheftCtrl', [])
 	function(
 		$scope, 
 		$state, 
-		$ionicPlatform
-		// $cordovaNativeAudio
-		// $cordovaMedia
+		$ionicPlatform,
+		NativeAudio,
+		Popover
 	) {
 
+		$ionicPlatform.ready(function() {
+			// NativeAudio.play('it');
 
+			Popover.init($scope);
+
+			$scope.openPopover = function() {
+				console.log('Open');
+				Popover.show();
+			}
+
+			$scope.closePopover = function() {
+				Popover.hide();
+			}
+		});
 		
 	}
 );

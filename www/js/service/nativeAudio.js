@@ -1,21 +1,32 @@
 angular.module('aksyonvaw.nativeAudioSrvc', [])
 
-.factory("NativeAudio", function($cordovaNativeAudio) {
+.factory('NativeAudio', function($cordovaNativeAudio) {
+
+	var _aAudioData = {
+	  	// Background music
+		'bg': 'audio/bgmusic.mp3',
+	  	// Identity Theft
+		'it': 'audio/case1.mp3',
+	  	// Cyber Bullying
+		'cb': 'audio/case2.mp3',
+	  	// Online Harassment
+		'oh1': 'audio/case3a.mp3',
+		'oh2': 'audio/case3b.mp3',
+		'oh3': 'audio/case3c.mp3'
+	};
 
 	function load() {
-	  	// Background music
-	  	$cordovaNativeAudio.preloadComplex('music', 'audio/bgmusic.mp3', 1, 1);
-	  	
-	  	// Identity Theft
-	  	$cordovaNativeAudio.preloadComplex('it', 'audio/case1.mp3', 1, 1);
+		for (var _sKey in _aAudioData) {
+			var _iVolume = 1;
+			var _iLayer = 2;
 
-	  	// Cyber Bullying
-	  	$cordovaNativeAudio.preloadComplex('cb', 'audio/case2.mp3', 1, 1);
+			if (_sKey === 'bg') {
+				_iVolume = 0.8;
+				_iLayer = 1;
+			}
 
-	  	// Online Harassment
-	  	$cordovaNativeAudio.preloadComplex('oh1', 'audio/case3a.mp3', 1, 1);
-	  	$cordovaNativeAudio.preloadComplex('oh2', 'audio/case3b.mp3', 1, 1);
-	  	$cordovaNativeAudio.preloadComplex('oh3', 'audio/case3c.mp3', 1, 1);
+	  		$cordovaNativeAudio.preloadComplex(_sKey, _aAudioData[_sKey], _iVolume, _iLayer);
+		}
 	}
 
 	function play(sAudio) {
@@ -31,12 +42,10 @@ angular.module('aksyonvaw.nativeAudioSrvc', [])
 	}
 
 	function unload() {
-		$cordovaNativeAudio.unload('music');
-		$cordovaNativeAudio.unload('it');
-		$cordovaNativeAudio.unload('cb');
-		$cordovaNativeAudio.unload('oh1');
-		$cordovaNativeAudio.unload('oh2');
-		$cordovaNativeAudio.unload('oh3');
+		for (var _sKey in _aAudioData) {
+	  		$cordovaNativeAudio.stop(_sKey);
+			$cordovaNativeAudio.unload(_sKey);
+		}
 	}
 
 	return {
@@ -76,7 +85,7 @@ angular.module('aksyonvaw.nativeAudioSrvc', [])
 		},
 
 		/**
-		 * Unload all audio in memory
+		 * Stops and unload all audio in memory
 		 * @return function
 		 */
 		unload: function() {

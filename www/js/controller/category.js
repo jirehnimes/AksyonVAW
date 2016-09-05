@@ -3,10 +3,13 @@ angular.module('aksyonvaw.categoryCtrl', [])
 .controller('CategoryCtrl', 
 	function(
 		$scope, 
-		$state
+		$state,
+		$ionicPlatform
 	) {
 
-		
+		$ionicPlatform.ready(function() {
+			
+		});
 
 	}
 );

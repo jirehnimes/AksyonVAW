@@ -22,14 +22,14 @@ angular.module('aksyonvaw', [
   
   // services
   'aksyonvaw.nativeAudioSrvc',
+  'aksyonvaw.popoverSrvc',
   
   // directives
   
 ])
 
 .run(function($ionicPlatform, NativeAudio) {
-  $ionicPlatform.ready(
-    function() {
+  $ionicPlatform.ready(function() {
       if(window.cordova && window.cordova.plugins.Keyboard) {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -45,7 +45,10 @@ angular.module('aksyonvaw', [
         StatusBar.styleDefault();
       }
     
-      NativeAudio.load();
-    }
-  );
+      // Allow native scrollbar in android
+      $('html').addClass('android-scroll-bar');
+
+      // Load all audio into memory
+      // NativeAudio.load();
+  });
 })

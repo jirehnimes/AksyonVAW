@@ -39,18 +39,6 @@ angular.module('aksyonvaw.routes', ['ui.router'])
       templateUrl: 'view/identityTheft.html',
       controller: 'IdentityTheftCtrl'
     })
-
-
-
-    // .state('menu.home', {
-    //   url: 'home',
-    //   views: {
-    //     'menuContent': {
-    //       templateUrl: 'view/home.html',
-    //       // controller: 'HomeCtrl'
-    //     }
-    //   }
-    // })
     
 
     

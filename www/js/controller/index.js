@@ -9,9 +9,13 @@ angular.module('aksyonvaw.indexCtrl', [])
 	) {
 
 		$ionicPlatform.ready(function() {
-			NativeAudio.loop('music');
+			// Load and loop the background music
+			// NativeAudio.loop('bg');
 
+			// Stops and unload all audio
+			// Quits the app
 			$scope.exitApp = function() {
+				// NativeAudio.unload();
 				ionic.Platform.exitApp();
 			};
 		});
