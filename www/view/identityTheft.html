@@ -1,8 +1,24 @@
-<ion-view id="it">
-    <ion-content scroll="false">
-		Identity Theft
-		<button class="button button-full button-assertive" ng-click="openPopover()">
-			Open
+<ion-view id="it" ng-init="init()">
+    <ion-content padding="false" scroll="false">
+		<div id="textContainer" on-touch="stopAutoScroll()" on-release="goAutoScroll()">
+			<p></p>
+		</div>
+
+    	<div id="tempContainer" hidden>
+    		<p></p>
+		</div>
+
+		<!-- Buttons -->
+		<button class="button button-small button-assertive btnNext" ng-click="next()">
+			NEXT
+		</button>
+
+		<button class="button button-small button-assertive btnSkip" ng-click="skip()">
+			SKIP
+		</button>
+
+		<button class="button button-small button-assertive btnExit" ng-click="exit()">
+			EXIT
 		</button>
     </ion-content>
 </ion-view>

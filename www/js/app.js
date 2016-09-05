@@ -26,6 +26,9 @@ angular.module('aksyonvaw', [
   
   // directives
   
+  // data
+  'aksyonvaw.identityTheftData',
+
 ])
 
 .run(function($ionicPlatform, NativeAudio) {

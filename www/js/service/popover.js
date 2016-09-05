@@ -40,6 +40,8 @@ angular.module('aksyonvaw.popoverSrvc', [])
 	}
 
 	function show() {
+		var _test = $('#popover');
+		console.log(_test);
 		_oScope.popover.show();
 	}
 
@@ -52,7 +54,7 @@ angular.module('aksyonvaw.popoverSrvc', [])
 			return init(oScope);
 		},
 
-		show: function(oEvent) {
+		show: function() {
 			return show();
 		},
 

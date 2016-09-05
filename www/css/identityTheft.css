@@ -1,157 +1,32 @@
-#it{
-  height: 100vh;
-  background-color: rgb(52,52,52);
-  color: white;
+#it {
+	height: 100vh;
+	background-color: blue;
+	color: white;
 }
 
-#it ion-content{
-  padding: 0;
+#it > ion-content {
+	height: 100%;
+	width: 100%;
 }
 
-#it .btnNext{
-  position: absolute;
-  padding: 0;
-  bottom: 20px;
-  right: 20px;
-  width: 20%;
-  height: 10%;
-  max-width: 200px;
-  max-height: 50px;
-  display: none;
+#it #textContainer {
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 40%;
+	padding: 10px;
+	overflow-y: auto;
 }
 
-#it .btnNext1{
-  position: absolute;
-  padding: 0;
-  bottom: 20px;
-  right: 20px;
-  width: 20%;
-  height: 10%;
-  max-width: 200px;
-  max-height: 50px;
-  display: none;
-}
-
-#it .btnSkip{
-  position: absolute;
-  padding: 0;
-  bottom: 20px;
-  right: 20px;
-  width: 20%;
-  height: 10%;
-  max-width: 200px;
-  max-height: 50px;
-}
-
-#it .btnExit{
-  position: absolute;
-  padding: 0;
-  bottom: 20px;
-  right: 20px;
-  width: 20%;
-  height: 10%;
-  max-width: 200px;
-  max-height: 50px;
-}
-
-#it .itcontent{
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#it #itstart{
-  background-image: url("../img/scenes/it/itstart.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itscene1{
-  background-image: url("../img/scenes/it/itscene1.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itscene2{
-  background-image: url("../img/scenes/it/itscene2.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itscene3{
-  background-image: url("../img/scenes/it/itscene3.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itscene4{
-  background-image: url("../img/scenes/it/itscene4.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itend1{
-  background-image: url("../img/scenes/it/itend.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itend2{
-  background-image: url("../img/scenes/it/itstart.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it #itend3, 
-#it #itend4{
-  background-image: url("../img/scenes/it/itinfo.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#it .itcontent div.typeddiv{
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  height: 40%;
-  padding: 10px;
-  overflow-y: auto;
-}
-
-#it #itend2 div.typeddiv{
-  height: 32%;
-}
-
-#it #itend1 div.typeddiv, #it #itend3 div.typeddiv, #it #itend4 div.typeddiv{
-  height: 80%;
-}
-
-#it .itcontent p{
-  text-align: justify;
-}
-
-#it .typed-cursor{
-  display: none;
-}
-
-#it div.pcontent, #it div.pcontent1{
-  display: none;
-}
-
-#it span.solvetitle{
-  color: rgb(0, 255, 0);
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-#it span.ptitle{
-  color: rgb(255, 102, 0);
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-#it span.endtitle{
-  color: red;
-  font-weight: bold;
-  font-size: 1.3em;
+#it .btnNext,
+#it .btnSkip,
+#it .btnExit {
+	position: fixed;
+	padding: 0;
+	bottom: 20px;
+	right: 20px;
+	width: 20%;
+	height: 10%;
+	max-width: 200px;
+	max-height: 50px;
+	display: none;
 }
