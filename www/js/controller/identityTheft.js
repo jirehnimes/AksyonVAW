@@ -67,6 +67,7 @@ angular.module('aksyonvaw.identityTheftCtrl', [])
 
 		$scope.openPopover = function() {
 			Popover.show();
+			Popover.changeText();
 		}
 
 		$scope.closePopover = function() {
@@ -97,7 +98,7 @@ angular.module('aksyonvaw.identityTheftCtrl', [])
 		}
 
 		$ionicPlatform.ready(function() {
-			NativeAudio.play('it');
+			// NativeAudio.play('it');
 
 			Popover.init($scope);
 

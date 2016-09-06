@@ -29,24 +29,26 @@ angular.module('aksyonvaw.popoverSrvc', [])
 		// Execute action on hide popover
 		_oScope.$on('popover.hidden', function() {
 			// Execute action
-			console.log('Popover hidden');
 		});
 
 		// Execute action on remove popover
 		_oScope.$on('popover.removed', function() {
 			// Execute action
-			console.log('Popover removed');
 		});
 	}
 
 	function show() {
-		var _test = $('#popover');
-		console.log(_test);
 		_oScope.popover.show();
 	}
 
 	function hide() {
 		_oScope.popover.hide();
+	}
+
+	function changeText(sText = null) {
+		if (sText !== null) {
+			$(_oScope.popover['$el']).find('#popoverText').text(sText);
+		}
 	}
 
 	return {
@@ -60,6 +62,10 @@ angular.module('aksyonvaw.popoverSrvc', [])
 
 		hide: function() {
 			return hide();
+		},
+
+		changeText: function(sText) {
+			return changeText(sText);
 		}
 	}
 })
